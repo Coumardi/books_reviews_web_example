@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>Book Reviews</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://kit.fontawesome.com/ed61763da0.js" crossorigin="anonymous"></script>
+    
+
+</head>
+
+<body>
+    
+    
+    <h1></h1>
+    <div>
+    <div class="book-container">
+    
+    <img src="{{ url_for('static', filename='book4.jpeg') }}"width="{{ 250 }}" height="{{ 200}}" />
+    <p> Price: $145.34</p>  
+    </div>
+    
+    <div class="book-container">
+    <img src="{{ url_for('static', filename='book2.jpeg') }}"width="{{ 250 }}" height="{{ 200}}" />
+    <p>Price: $34.55</p>
+    
+    </div>
+    <div class="book-container">
+    <img src="{{ url_for('static', filename='book3.jpeg') }}"width="{{ 250 }}" height="{{ 200}}" />
+    <p>Price: $145.34</p>
+    </div>
+    <div class="book-container">
+    <img src="{{ url_for('static', filename='book5.jpeg') }}"width="{{ 250 }}" height="{{ 200}}" />
+    <p>Price: $56.55</p>
+    </div>  
+    <!-- Add a div to input book data -->
+    <div id="addBook">
+        <h2>Add a Book</h2>
+        
+        <input type="text" id="bookTitle" placeholder="Book Title">
+        <input type="text" id="publicationYear" placeholder="Publication Year">
+        <button onclick="addBook()">Add</button>
+    </div>
+
+    <!-- Add a search box -->
+    <div id="searchBox">
+        <h2>Search</h2>
+        <input type="text" id="searchText" placeholder="Enter Book Title">
+        <button onclick="searchBooks()">Search</button>
+    </div>
+
+    <!-- Display books in this div -->
+    <div id="bookList">
+        <!-- Book data will be displayed here dynamically -->
+    </div>
+
+    
+      
+
+
+    
+    <button id="showBooksButton" onclick="showAllBooks()">Show All Books</button>
+
+    <!-- Display books in this div -->
+    <div id="allbooks">
+        <!-- Book data will be displayed here dynamically -->
+    </div>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

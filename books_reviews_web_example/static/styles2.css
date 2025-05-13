@@ -1,0 +1,75 @@
+body{
+    background-image: url(image8.jpg);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    
+
+}
+
+.header{
+    height:  15%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.navbar{
+    text-align: center;
+    flex: 1;
+
+}
+
+.navbar a{
+    padding: 6px 20px;
+    text-decoration: none;
+    color:white;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.button{
+    cursor: pointer;
+    color: #cc0052;
+    font-size: 18;
+    letter-spacing: 2px;
+    padding:10px 30px;
+    
+    
+
+}
+
+.button:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.button:visited{
+    background-color: #fff;
+    color: #cc0052;
+}
+
+
+.content{
+    text-align: center;
+    margin: 12%;
+
+}
+
+.content h1{
+    font-size: 80px;
+    color: white;
+
+
+}
